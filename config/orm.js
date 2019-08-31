@@ -11,7 +11,7 @@ var orm = {
             cb(result)
         });
     },
-    insertOne: function(tableInput, name, cb){
+    insertOne: function(name, cb){
         var queryString = `INSERT INTO ${tableInput}(burger_name) `
         queryString += `VALUES ("${name}")`
         console.log(queryString)
