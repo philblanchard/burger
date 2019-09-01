@@ -1,9 +1,9 @@
-INSERT INTO burgers_db(burger_name, devoured)
+INSERT INTO burgers(burger_name)
 VALUES
-    ('Phil Burger', false),
-    ('SQL Burger', false),
-    ('Spaghetti Burger', true),
-    ('Cheese Burger', false),
-    ('Watermelon Burger', false),
-    ('Bad Burger', true),
-    ('Good Burger', false);
+    ('Phil Burger'),
+    ('SQL Burger',
+    ('Spaghetti Burger'),
+    ('Cheese Burger'),
+    ('Watermelon Burger'),
+    ('Bad Burger'),
+    ('Good Burger');
