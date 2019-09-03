@@ -14,12 +14,14 @@ router.get("/", function(req, res) {
 })
 
 router.post("/api/burgers", function(req, res) {
-    burger.create(req.body.name, function(result){
+    burger.create(req.body.name, req.body.devoured, function(result){
         res.json({ id: result.insertId})
     })
 })
 
 router.put("/api/burgers/:id", function(req, res){
+    // console.log(req)
+    // console.log(res)
     burger.update(req.params.id, req.body.devoured, function(result) {
         if (result.changedRows == 0) {
             return res.status(404).end()
